@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Itinerary Planner</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Lcx4iDgMb0GiTUAWmID9BVPh9nKtVbDcx0g2f8Qs+0NGv02x/L4h8y3fCF3BtkkzCXhM4XArWUSMTuhJm5hokQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+      font-family: 'Pacifico', cursive;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    form {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    label, input, select, textarea {
+      display: block;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+    input[type="text"], input[type="date"], select, textarea {
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      color: #333;
+      outline: none;
+    }
+    input[type="submit"] {
+      width: auto;
+      padding: 15px 30px;
+      border: none;
+      background-color: #333;
+      color: #fff;
+      font-size: 18px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    input[type="submit"]:hover {
+      background-color: #555;
+    }
+    .fa-plane {
+      font-size: 36px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><i class="fas fa-plane"></i> Travel Itinerary Planner</h1>
+  </header>
+  <div class="container">
+    <form>
+      <label for="destination">Destination:</label>
+      <input type="text" id="destination" name="destination" placeholder="Enter your destination..." required>
+      
+      <label for="arrival-date">Arrival Date:</label>
+      <input type="date" id="arrival-date" name="arrival-date" required>
+      
+      <label for="departure-date">Departure Date:</label>
+      <input type="date" id="departure-date" name="departure-date" required>
+      
+      <label for="activities">Planned Activities:</label>
+      <textarea id="activities" name="activities" placeholder="Enter your planned activities..."></textarea>
+      
+      <input type="submit" value="Create Itinerary">
+    </form>
+  </div>
+</body>
+</html>
